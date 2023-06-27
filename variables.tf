@@ -20,6 +20,6 @@ variable "key_name" {
 }
 variable "private_key_path" {
   default = "C:/Users/dell/Downloads/admin1.pem"
-  type = "string"
+  type = string
   description = "this is the path of private_key"  
 }
