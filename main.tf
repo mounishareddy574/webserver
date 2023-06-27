@@ -6,7 +6,7 @@ resource "aws_instance" "mounisha_web" {
   connection {
     type        = "ssh"
     user        = "ubuntu"
-    private_key = file("C:/Users/dell/Downloads/admin1.pem")
+    private_key = file(var.private_key_path)
     host        = self.public_ip
   }
 
